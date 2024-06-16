@@ -1,0 +1,5 @@
+pypdf
+gzip
+argparse
+sys
+os
