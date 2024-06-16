@@ -7,26 +7,26 @@ I tested in on PDF's created/annotated on Onyx Boox 3 running Android 12.
 It successfully converts text, shapes and various brushes. It fails to convert (for some reason that I could not find yet) the Ink created by Pencil.
 
 <h2> Usage: </h2>
-usage: pdftowrite.py [-h] [-s {A4,A4l,Letter,Letterl,Screen,Screenl,Auto,Custom}] [-pw PAGEWIDTH] [-ph PAGEHEIGHT] [-f] inputfile outputfile
+usage: pdftowrite.py [-h] [-s {A4,A4l,Letter,Letterl,Screen,Screenl,Auto,Custom}] [-pw PAGEWIDTH] [-ph PAGEHEIGHT] [-f] inputfile outputfile<br>
+<br>
+positional arguments:<br>
+&nbsp;&nbsp;inputfile<br>
+&nbsp;&nbsp;outputfile<br>
 
-positional arguments:
-  inputfile
-  outputfile
+options:<br>
+&nbsp;&nbsp;-h, --help            show this help message and exit<br>
+&nbsp;&nbsp;-s {A4,A4l,Letter,Letterl,Screen,Screenl,Auto,Custom}, --size {A4,A4l,Letter,Letterl,Screen,Screenl,Auto,Custom}<br>
+&nbsp;&nbsp;-pw PAGEWIDTH, --pagewidth PAGEWIDTH<br>
+&nbsp;&nbsp;-ph PAGEHEIGHT, --pageheight PAGEHEIGHT<br>
+&nbsp;&nbsp;-f, --force <br>
 
-options:
-  -h, --help            show this help message and exit
-  -s {A4,A4l,Letter,Letterl,Screen,Screenl,Auto,Custom}, --size {A4,A4l,Letter,Letterl,Screen,Screenl,Auto,Custom}
-  -pw PAGEWIDTH, --pagewidth PAGEWIDTH
-  -ph PAGEHEIGHT, --pageheight PAGEHEIGHT
-  -f, --force
+where the inputfile is the pdf file to be converted<br>
+the outputfile is the name the svgz file will have. If file exists, it will not be overwritten unless "-f/--force" is passed as an option<br>
 
-where the inputfile is the pdf file to be converted
-the outputfile is the name the svgz file will have. If file exists, it will not be overwritten unless "-f/--force" is passed as an option
+"-s/--size" chooses the size of the page in the Write file. Write comes with A4, Letter and Screen sizes predefined. The definitions used in the script coincide with the sizes define in Write.<br>
 
-"-s/--size" chooses the size of the page in the Write file. Write comes with A4, Letter and Screen sizes predefined. The definitions used in the script coincide with the sizes define in Write.
+using -s Custom, one can define the pagewidth and pageheight.<br>
 
-using -s Custom, one can define the pagewidth and pageheight.
+If Auto is chose, size given in the pdf will be used<br>
 
-If Auto is chose, size given in the pdf will be used
-
-size defaults to A4.
+size defaults to A4.<br>
