@@ -1,6 +1,6 @@
 # OnyxPdfToWrite
-
-This python script converts a pdf created by Onyx Boox to an svgz file for <a href="https://www.styluslabs.com"> Stylus Labs Write </a>
+<h1>pdftowrite</h1>
+<em>pdftowrite.py</em> python script converts a pdf created by Onyx Boox to an svgz file for <a href="https://www.styluslabs.com"> Stylus Labs Write </a>
 
 I tested in on PDF's created/annotated on Onyx Boox 3 running Android 12.
 
@@ -30,3 +30,7 @@ using -s Custom, one can define the pagewidth and pageheight.<br>
 If Auto is chose, size given in the pdf will be used<br>
 
 size defaults to A4.<br>
+#
+<h1>PdftoTex</h1>
+
+<em>pdftotex.py</em> takes the pdf file created by boox and tries to convert it to a latex file that can be compiled by pdflatex. The Ink are converted into tikzpictures. You should run pdflatex twice on the created file to get everything in their correct position.
